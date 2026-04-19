@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>التاجر للدعاية - شركة دعاية وإعلان</title>
+
+<style>
+
+/* ===== BASE ===== */
+body{
+margin:0;
+font-family:Arial;
+background:#0b1020;
+color:#fff;
+overflow-x:hidden;
+}
+
+section{
+padding:120px 20px;
+text-align:center;
+opacity:0;
+transform:translateY(60px);
+transition:1s ease;
+position:relative;
+}
+
+section.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* ===== BACKGROUND LAYERS ===== */
+.bg{
+position:absolute;
+inset:0;
+opacity:.08;
+background-size:cover;
+z-index:-1;
+}
+
+/* ===== HERO ===== */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:55px;
+color:#00ffd5;
+animation:fadeIn 2s ease;
+}
+
+.hero p{
+max-width:700px;
+line-height:2;
+font-size:18px;
+opacity:.8;
+}
+
+@keyframes fadeIn{
+from{opacity:0;transform:scale(.7);}
+to{opacity:1;transform:scale(1);}
+}
+
+/* ===== COUNTERS ===== */
+.stats{
+display:flex;
+justify-content:center;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.stat h2{
+font-size:55px;
+color:#00ffd5;
+}
+
+/* ===== SERVICES ===== */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:40px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+padding:20px;
+border-radius:15px;
+border:1px solid rgba(255,255,255,.1);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:#00ffd5;
+}
+
+/* ===== ABOUT ===== */
+.about-text{
+max-width:900px;
+margin:auto;
+line-height:2.2;
+font-size:18px;
+opacity:.9;
+}
+
+/* ===== FORM ===== */
+form{
+max-width:400px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+input,textarea{
+padding:12px;
+border:none;
+border-radius:10px;
+outline:none;
+}
+
+button{
+padding:12px;
+background:#00ffd5;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-weight:bold;
+}
+
+/* ===== WHATSAPP ===== */
+.whatsapp{
+position:fixed;
+bottom:20px;
+left:20px;
+width:60px;
+height:60px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+<h1>التاجر للدعاية</h1>
+<p>
+شركة دعاية وإعلان متخصصة في صناعة النجاح الرقمي، نساعد العلامات التجارية على الانتشار وتحقيق نتائج حقيقية من خلال الإعلانات الممولة وإدارة الحملات التسويقية.
+</p>
+</div>
+
+<!-- STATS -->
+<section>
+<div class="bg" style="background-image:url('https://images.unsplash.com/photo-1557804506-669a67965ba0');"></div>
+
+<div class="stats">
+<div class="stat">
+<h2 class="count" data-target="1000">0</h2>
+<p>عميل</p>
+</div>
+
+<div class="stat">
+<h2 class="count" data-target="2100">0</h2>
+<p>حملة</p>
+</div>
+
+<div class="stat">
+<h2 class="count" data-target="5">0</h2>
+<p>سنوات خبرة</p>
+</div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section>
+<div class="bg" style="background-image:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71');"></div>
+
+<h2>الخدمات</h2>
+
+<div class="grid">
+<div class="card">إعلانات ممولة</div>
+<div class="card">سوشيال ميديا</div>
+<div class="card">بوتات تيليجرام</div>
+<div class="card">نمو الحسابات</div>
+<div class="card">إنشاء مواقع</div>
+<div class="card">تسويق رقمي</div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section>
+<div class="bg" style="background-image:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');"></div>
+
+<h2>من نحن</h2>
+
+<p class="about-text">
+نحن شركة التاجر للدعاية والإعلان، شركة متخصصة في تقديم حلول تسويقية متكاملة تساعد الشركات والأفراد على بناء حضور قوي في السوق الرقمي.  
+نؤمن أن الإعلان الناجح ليس مجرد نشر محتوى، بل هو استراتيجية متكاملة تبدأ من دراسة السوق وتنتهي بتحقيق نتائج حقيقية.
+
+<br><br>
+
+نعمل على إدارة الحملات الإعلانية على منصات متعددة مثل فيسبوك، إنستجرام، تيك توك وجوجل، مع تحليل دقيق للأداء لضمان أفضل عائد على الاستثمار.
+
+<br><br>
+
+هدفنا هو تحويل الأفكار إلى نجاحات حقيقية، ومساعدة العملاء على النمو السريع والوصول إلى جمهورهم المستهدف بأفضل الطرق الممكنة.
+</p>
+</section>
+
+<!-- CONTACT -->
+<section>
+
+<h2>اطلب خدمتك الآن</h2>
+
+<form onsubmit="sendToWhatsApp(event)">
+<input id="name" placeholder="الاسم" required>
+<input id="phone" placeholder="رقم الهاتف" required>
+<input id="service" placeholder="الخدمة" required>
+<textarea id="details" placeholder="تفاصيل"></textarea>
+<button>إرسال واتساب 🚀</button>
+</form>
+
+</section>
+
+<!-- WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/201024941083">📱</a>
+
+<script>
+
+/* ===== ANIMATION ON SCROLL ===== */
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll",()=>{
+sections.forEach(sec=>{
+if(sec.getBoundingClientRect().top < window.innerHeight - 100){
+sec.classList.add("show");
+}
+});
+});
+
+/* ===== COUNTER ===== */
+function startCounter(el){
+let target = +el.dataset.target;
+let count = 0;
+let step = target / 100;
+
+let interval = setInterval(()=>{
+count += step;
+if(count >= target){
+el.innerText = target;
+clearInterval(interval);
+}else{
+el.innerText = Math.floor(count);
+}
+},20);
+}
+
+window.addEventListener("scroll",()=>{
+document.querySelectorAll(".count").forEach(c=>{
+if(!c.classList.contains("done")){
+startCounter(c);
+c.classList.add("done");
+}
+});
+});
+
+/* ===== WHATSAPP SEND ===== */
+function sendToWhatsApp(e){
+e.preventDefault();
+
+let msg =
+"🔥 طلب جديد من الموقع%0A%0A" +
+"👤 الاسم: " + name.value + "%0A" +
+"📞 الهاتف: " + phone.value + "%0A" +
+"💼 الخدمة: " + service.value + "%0A" +
+"📝 التفاصيل: " + details.value;
+
+window.open(
+"https://wa.me/201024941083?text=" + encodeURIComponent(msg),
+"_blank"
+);
+}
+
+</script>
+
+</body>
+</html>
